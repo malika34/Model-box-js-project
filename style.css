@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #3c5077;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+
+}
+
+
+#btn {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+#btn:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+}
+
+#btn:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+}
+
+.modal-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: white;
+    height: 15rem;
+    width: 18rem;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.modal-box.show {
+    top: 40%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.modal-box h2 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.modal-box p {
+    font-size: 0.7rem;
+    max-width: 15.2rem;
+    margin-top: 0.7rem;
+}
+
+.modal-box i {
+    color: yellowgreen;
+    font-size: 4.5rem;
+    margin-top: -2.8rem;
+}
+
+#ok-btn {
+    background-color: yellowgreen;
+    border: none;
+    display: flex;
+    padding: 0.4rem 7rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
