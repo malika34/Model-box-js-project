@@ -35,6 +35,6 @@ It includes a smooth animation where the modal **slides down from the top** when
 
 👨‍💻 **Author**
 
-- Developed by ❤️ [Your Name]
+- Developed by ❤️ [Malik Musadiq Ahmed]
 
 - Built with HTML, CSS, JavaScript only
